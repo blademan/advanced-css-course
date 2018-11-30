@@ -31,6 +31,12 @@
             &-1 {
                 background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary);
             }
+            &-2 {
+                background-image: linear-gradient(to right bottom, $color-green, $color-green-dark);
+            }
+            &-3 {
+                background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary);
+            }
 
 
         }
@@ -62,11 +68,11 @@
         }
         
         &--2 {
-            background-image: url(../img/nat-5.jpg);
+            background-image: linear-gradient(to right bottom, $color-green, $color-green-dark), url(../img/nat-6.jpg);
         }
         
         &--3 {
-            background-image: url(../img/nat-5.jpg);
+            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary), url(../img/nat-7.jpg);
         }
     }
     &__heading {
@@ -90,6 +96,16 @@
             rgba($color-secondary-light, .85),
             rgba($color-secondary, .85));
         }
+        &--2 {
+            background-image: linear-gradient(to right bottom,
+            rgba($color-green, .85),
+            rgba($color-green-dark, .85));
+        }
+        &--3 {
+            background-image: linear-gradient(to right bottom,
+            rgba($color-tertiary-light, .85),
+            rgba($color-tertiary, .85));
+        }
     }
 
     &__details {
@@ -111,5 +127,36 @@
             }
 
         }
+    
+        
+    }
+    //FRONT CARD
+    &__cta {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        text-align: center;
+    }
+
+    &__price-box {
+        text-align: center;
+        color: white;
+        margin-bottom: 8rem;
+
+    }
+
+    &__price-only {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+
+    }
+
+    &__price-value {
+        font-size: 6rem;
+        font-weight: 100;
+
+
     }
 }

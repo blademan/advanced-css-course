@@ -18,9 +18,7 @@
   transform: translateY(-0.1rem);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
-.btn-white {
-  background-color: #fff;
-  color:$color-grey; }
+
 
 .btn::after {
   content: "";
@@ -34,8 +32,20 @@
   z-index: -1;
   transition: all .4s; }
 
+
+.btn-white {
+  background-color: #fff;
+  color:$color-grey; }
 .btn-white:after {
   background-color: #fff; }
+
+.btn--green {
+    background-color: $color-green-medium;
+    color: white; }
+.btn--green:after {
+    background-color: $color-green-medium; }
+
+
 
 .btn:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
